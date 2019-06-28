@@ -4,7 +4,7 @@ import com.yuxiu.edu.mapper.base.BaseMapper;
 import com.yuxiu.edu.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
-@Mapper
+
 public interface UserMapper extends BaseMapper<User> {
 
     public User findById(Integer id);

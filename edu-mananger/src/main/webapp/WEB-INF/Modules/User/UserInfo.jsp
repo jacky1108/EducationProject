@@ -2,9 +2,9 @@
 <html>
 <head>
 <title>用户信息</title>
-	<link rel="Stylesheet" type="text/css" href="./../../assets/Styles/bridging.css"/>
-	<script type="text/javascript" src="./../../assets/Scripts/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="./../../assets/Scripts/common.js"></script>
+	<link rel="Stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/Styles/bridging.css"/>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/Scripts/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/Scripts/common.js"></script>
 <script type="text/javascript">
 	 function search(){
 	/* $("#searchUserForm1").attr("action","");
@@ -68,7 +68,7 @@
 				<h3 class="total_title">查询结果</h3>
 				<ul>
 					<li><input type="button" value="新增" class="addition"
-						data-url="./UserEdit.html"
+						data-url="${pageContext.request.contextPath}/user/edit.do"
 						onclick="Common.showPage(this);" /></li>
 				</ul>
 			</div>

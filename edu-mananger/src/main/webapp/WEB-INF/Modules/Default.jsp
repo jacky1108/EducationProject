@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta content="郭永峰IT教育系统" name="keywords" />
-<meta content="郭永峰IT教育系统" name="description" />
+<meta content="IT教育系统" name="keywords" />
+<meta content="IT教育系统" name="description" />
 <title>教育后台管理系统</title>
-<link rel="Stylesheet" type="text/css" href="./assets/Styles/bridging.css"/>
-<script type="text/javascript" src="./assets/Scripts/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="./assets/Scripts/common.js"></script>
+<link rel="Stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/Styles/bridging.css"/>
+<script type="text/javascript" src="${pageContext.request.contextPath}/assets/Scripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/assets/Scripts/common.js"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 			<div class="header_top">
 				<header>
 					<div class="header_logo">
-						<h1>郭永峰IT教育后台系统</h1>
+						<h1>教育后台系统</h1>
 					</div>
 					<div class="header_tab">
 						<ul>
@@ -42,12 +42,12 @@
 						<li class="navContent nav_current">
 							<a href="#" class="showNav" id="user" data-name="main_iframe"
 							onclick="Common.switchNavigation(this);"
-							data-url="./Modules/User/UserManage.html">用户管理</a>
+							data-url="${pageContext.request.contextPath}/user/manage.do">用户管理</a>
 						</li>
 						<li class="navContent">
 							<a href="#" class="showNav" id="finance" data-name="main_iframe"
 							onclick="Common.switchNavigation(this);"
-							data-url="./Modules/User/UserManage.html">工资管理</a>
+							data-url="${pageContext.request.contextPath}/user/manage.do">工资管理</a>
 						</li>
 					</ul>
 				</nav>
@@ -58,7 +58,7 @@
 		<div id="main_iframe"
 			class="index_mainIfram_position  mainIfram_position">
 			<iframe class="main_iframe" id="home_iframe" frameborder="0"
-				border="0" src="./Modules/User/UserManage.html"></iframe>
+				border="0" src="${pageContext.request.contextPath}/user/manage.do"></iframe>
 		</div>
 		
 		<!--====下面是页脚====-->
