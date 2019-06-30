@@ -17,6 +17,7 @@
         <module>edu-service</module>
         <module>edu-mananger</module>
         <module>edu-api</module>
+        <module>AutoGenerator</module>
     </modules>
 
     <properties>

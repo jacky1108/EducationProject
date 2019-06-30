@@ -2,8 +2,9 @@ package com.yuxiu.edu.mapper;
 
 import com.yuxiu.edu.model.SalaryDetail;
 import com.yuxiu.edu.model.SalaryDetailExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SalaryDetailMapper {
     /**

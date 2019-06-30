@@ -19,7 +19,7 @@ public class IUserServiceImpl extends IBaseServiceImpl<User> implements IUserSer
 
     @Override
     public User findById(Integer id) {
-        return userMapper.findById(id);
+        return userMapper.selectByPrimaryKey(id);
     }
 
     @Override

@@ -14,6 +14,10 @@ public abstract  class BaseContorller<T> {
     //edit页面
     public static String EDIT_PAGE;
 
+    public static final String MANAGE ="manage";
+    public static final String INFO ="info";
+    public static final String EDIT ="edit";
+
 
 
     public BaseContorller(){
@@ -22,12 +26,12 @@ public abstract  class BaseContorller<T> {
             //1.获取泛型真实类型
             Type[] types = pt.getActualTypeArguments();
             //2.把type类型赋值给Class类型
-            Class<T> clz = (Class<T>) types[0];  //User
+            Class<T> clz = (Class<T>) types[0];
             //3.定义页面的静态变量
             String modelName = clz.getSimpleName().toLowerCase();
-            EDIT_PAGE = modelName + "/edit";
-            INFO_PAGE = modelName + "/info";
-            MANAGE_PAGE = modelName + "/manage";
+            EDIT_PAGE = modelName + "/"+EDIT;
+            INFO_PAGE = modelName + "/"+INFO;
+            MANAGE_PAGE = modelName + "/"+MANAGE;
         }catch (Exception e){
             e.printStackTrace();
         }

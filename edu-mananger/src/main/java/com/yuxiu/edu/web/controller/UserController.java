@@ -2,13 +2,14 @@ package com.yuxiu.edu.web.controller;
 
 import com.yuxiu.edu.model.User;
 import com.yuxiu.edu.service.IUserService;
+import com.yuxiu.edu.web.controller.Base.BaseContorller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("user")
-public class UserController {
+public class UserController extends BaseContorller<User> {
 
     @Autowired
     private IUserService userService;
@@ -27,21 +28,23 @@ public class UserController {
         return null;
     }
 
-    @RequestMapping("manage")
-    public String manage(){
-        return "User/UserManage";
+    @RequestMapping(MANAGE)
+    public String manage()
+    {
+        return MANAGE_PAGE;
     }
 
-    @RequestMapping("info")
+    @RequestMapping(INFO)
     public String info(){
 
-        return "User/UserInfo";
+        return INFO_PAGE;
     }
 
-    @RequestMapping("edit")
+    @RequestMapping(EDIT)
     public String edit()
     {
-        return "User/UserEdit";
+
+        return EDIT_PAGE;
     }
 
 }
